@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   mongodb:
     container_name: MongoDB
@@ -15,7 +14,6 @@ services:
       - "27017:27017"
     volumes:
       - ./docker/mongodb-data:/data/db
-    env_file: .env
     networks:
       - app-network
 
